@@ -1,0 +1,28 @@
+.singleJob {
+	width: 600px;
+	margin: auto;
+	border: 1px solid black;
+	background: #384750;
+	color: white;
+	margin-top: 50px;
+}
+
+.singleHead {
+	text-align: center;
+	border-bottom: 1px solid black; 
+}
+
+.jobImage {
+	width: 598px;
+	height: 600px;
+	background: white;
+}
+
+.cancelButton {
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.confirmJob {
+	cursor: pointer;
+}

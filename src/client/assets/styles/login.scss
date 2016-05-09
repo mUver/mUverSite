@@ -1,0 +1,54 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+.entypo-user {
+	color: gray;
+	position: relative;
+	left: 30px;
+}
+
+.entypo-lock {
+	color: gray;
+	position: relative;
+	left: 30px;
+}
+
+.login {
+	border: 1px solid black;
+	background: #384750;
+	margin: auto;
+	width: 800px;
+	height: 300px;
+	margin-top: 200px;
+	text-align: center;
+}
+
+#username {
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+#password {
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+.loginHead {
+	color: white;
+}
+
+.accountHead {
+	color: white;
+}

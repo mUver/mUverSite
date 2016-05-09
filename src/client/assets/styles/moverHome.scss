@@ -1,0 +1,62 @@
+li {
+	list-style-type: none;
+}
+
+#moverMain {
+	width: 100%;
+	text-align: center;
+}
+
+.jobList {
+	margin: auto;
+	width: 600px;
+}
+
+.jobBox {
+	display: flex;
+	flex-direction: row;
+	height: 51px;
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.titleBox {
+	height: 50px;
+	line-height: 50px;
+	width: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.priceBox {
+	height: 50px;
+	line-height: 50px;
+	width: 100px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.distanceBox {
+	height: 50px;
+	line-height: 50px;
+	width: 150px;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.jobView {
+	width: 199px;
+	cursor: pointer;
+}
+
+
+

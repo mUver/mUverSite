@@ -1,0 +1,133 @@
+#newjob {
+	border: 1px solid black;
+	background: #384750;
+	margin: auto;
+	width: 800px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.jobTitle {
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+.desc {
+	width: 400px;
+	margin: auto;
+	text-indent: 5px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 100px;
+	overflow: auto;
+}
+
+::-webkit-input-placeholder {
+  text-indent: 40px;
+}
+
+.price {
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+.image {
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+.location {
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+.destination {
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+.phone{
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+#jobLabel {
+	position: relative;
+    right: 169px;
+    bottom: 10px;
+    color: white;
+}
+
+#descLabel {
+	position: relative;
+    right: 159px;
+    bottom: 10px;
+    color: white;
+}
+
+#priceLabel {
+	position: relative;
+    right: 180px;
+    bottom: 10px;
+    color: white;
+}
+
+#imageLabel {
+	position: relative;
+    right: 177px;
+    bottom: 10px;
+    color: white;
+}
+
+#locationLabel {
+	position: relative;
+    right: 171px;
+    bottom: 10px;
+    color: white;
+}
+
+#destinationLabel {
+	position: relative;
+    right: 162px;
+    bottom: 10px;
+    color: white;
+}
+
+#phoneLabel {
+	position: relative;
+    right: 147px;
+    bottom: 10px;
+    color: white;
+}
+
+.jobHead {
+	color: white;
+}
+
+.jobSub {
+	margin-bottom: 20px;
+}

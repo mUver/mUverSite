@@ -1,0 +1,87 @@
+.cardContainer {
+	width: 600px;
+	margin: auto;
+	text-align: center;
+	border: 1px solid black;
+	background: #384750;
+	margin-top: 50px;
+}
+
+.cardHead {
+	color: white;
+}
+
+.cardButton {
+	margin-bottom: 20px;
+}
+
+.card {
+	width: 400px;
+	margin: auto;
+	text-indent: 40px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+.exp_month {
+	width: 100px;
+	margin: auto;
+	text-indent: 20px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+	margin-right: 30px;
+}
+
+.exp_year {
+	width: 100px;
+	margin: auto;
+	text-indent: 20px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+	margin-right: 30px;
+}
+
+.cvc {
+	width: 100px;
+	margin: auto;
+	text-indent: 20px;
+	margin-bottom: 20px;
+	box-shadow: 2px 6px 12px;
+	height: 30px;
+}
+
+.exp_month::-webkit-input-placeholder {
+  text-indent: 30px;
+}
+
+.cvc::-webkit-input-placeholder {
+  text-indent: 30px;
+}
+
+.exp_year::-webkit-input-placeholder {
+  text-indent: 30px;
+}
+
+#cardLabel {
+	position: relative;
+    right: 147px;
+    bottom: 10px;
+    color: white;
+}
+
+#expLabel {
+	position: relative;
+    right: 136px;
+    bottom: 10px;
+    color: white;
+}
+
+#cvcLabel {
+	position: relative;
+    left: 67px;
+    bottom: 10px;
+    color: white;
+}
