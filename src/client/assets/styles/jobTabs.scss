@@ -1,0 +1,43 @@
+.tabs {
+	position: relative;
+	top: 91px;
+    left: 309px;
+}
+
+.tab {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black; 
+	color: white;
+	background: #384750;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.tab:hover {
+	border-bottom: 0;
+	background: green;
+}
+
+.active {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 0; 
+	color: white;
+	background: green;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+
+

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, browserHistory } from 'react-router';
 import { login } from "api/data";
 import Login from "ui/login";
+import store from "store";
 
 require('assets/styles/login.scss');
 
@@ -30,6 +31,10 @@ export default React.createClass({
 
     handleSubmit: function(e){
         e.preventDefault();
+        store.dispatch({
+          type: "LOGIN",
+          username: this.state.username
+        })
         login(this.state.username, this.state.password).then(function(resp){
           browserHistory.push("/home")
         })

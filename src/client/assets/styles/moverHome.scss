@@ -3,6 +3,7 @@ li {
 }
 
 #moverMain {
+	margin-top: 80px;
 	width: 100%;
 	text-align: center;
 }
@@ -56,6 +57,14 @@ li {
 .jobView {
 	width: 199px;
 	cursor: pointer;
+}
+
+.locButton {
+	margin-bottom: 10px;
+}
+
+#sortBy {
+	margin-bottom: 10px;
 }
 
 

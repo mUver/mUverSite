@@ -1,0 +1,90 @@
+.UprogressBox {
+	width: 600px;
+	margin: auto;
+	margin-top: 40px;
+	border: 1px solid black;
+	background: #384750;
+	text-align: center;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+.UprogressHead {
+	color: white;
+}
+
+.UjobBox {
+	border: 1px solid white;
+	margin: 10px;
+	width: 400px;
+	margin: 10px;
+	text-align: left;
+	padding: 5px;
+}
+
+.UtitleBox {
+	color: white;
+}
+
+.UpriceBox {
+	color: white;
+}
+
+.UlocationBox {
+	color: white;
+}
+
+.UdestinationBox {
+	color: white;
+}
+
+.UphoneBox {
+	color: white;
+}
+
+.UstatusBox {
+	color: white;
+}
+
+.UmoverNameBox {
+	color: white;
+}
+
+.UmoverPhoneBox {
+	color: white;
+}
+
+.Utitle, .Uprice, .Ulocation, .Udestination, .Uphone, .Ustatus, .UmoverName, .UmoverPhone {
+	color: white;
+	text-decoration: underline;
+}
+
+.Ureport {
+	background: red;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+.Ucomplete {
+	background: green;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+.UreportGray {
+	background: gray;
+	color: lightgray;
+	margin-bottom: 15px;
+	outline: none;
+}
+
+.UcompleteGray {
+	background: gray;
+	color: lightgray;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	outline: none;
+}

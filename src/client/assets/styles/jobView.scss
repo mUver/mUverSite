@@ -12,10 +12,13 @@
 	border-bottom: 1px solid black; 
 }
 
+.singleBody {
+	margin: 15px;
+}
+
 .jobImage {
-	width: 598px;
-	height: 600px;
-	background: white;
+	min-width: 567px;
+	min-height: 600px;
 }
 
 .cancelButton {

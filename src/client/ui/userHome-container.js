@@ -5,7 +5,7 @@ import { Link, browserHistory } from 'react-router';
 export default React.createClass({
 	onClick:function(e) {
 		e.preventDefault();
-		browserHistory.push("/cardInfo")
+		browserHistory.push("/newJob")
 	},
 
 	render:function(){

@@ -1,6 +1,33 @@
 import React from 'react';
+import { login, reset } from "api/data";
+import { Link, browserHistory } from 'react-router';
 
 export default React.createClass({
+  getInitialState:function(){
+    return {
+      username: "",
+      password: "",
+      profId: ""
+    }
+  },
+
+  Udemo: function() {
+    reset(14, function(){
+      login("test_customer", "pass_word").then(function(resp){
+        browserHistory.push("/home")
+      })  
+    });
+    
+  },
+
+  Mdemo: function() {
+    reset(10, function(){
+      login("mover_test", "pass_word").then(function(resp){
+        browserHistory.push("/home")
+      })  
+    });
+  },
+
   render: function () {
     return (
       <div className="login">
@@ -12,6 +39,8 @@ export default React.createClass({
         </form>
         <h3 className="accountHead" > Don't have an account? </h3>
           <button className="registerButton" onClick={this.props.onClick}>Register</button>
+          <button className="UserTest" onClick={this.Udemo} > Demo Customer </button>
+          <button className="MoverTest" onClick={this.Mdemo} > Demo Mover </button>
       </div>
     )
   }

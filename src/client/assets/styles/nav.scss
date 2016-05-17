@@ -10,6 +10,7 @@
 .logo {
 	height: 100px;
     width: 160px;
+    cursor: pointer;
 }
 
 .profile {
@@ -30,18 +31,54 @@
 	font-size: 16px;
 }
 
-.settingsTag:visited {
+.profileTag {
+	color: white;
+	font-size: 16px;
+}
+
+.profileTag:visited {
+	color: white;
+}
+
+.historyTag {
+	color: white;
+	position: relative;
+	font-size: 16px;
+}
+
+.historyTag:visited {
 	color: white;
 }
 
 .logoutTag {
 	color: white;
 	position: relative;
-	top: 22px;
-	left: 70px;
 	font-size: 16px;
 }
 
 .logoutTag:visited {
 	color: white;
+}
+
+.dropdown {
+	background: green;
+	display: none;
+}
+
+.settingsUL {
+	color: white;
+}
+
+.settingsUL:hover > ul {
+	display: block;
+}
+
+.dropdown:hover {
+	display: block;
+}
+
+.dropdown > li {
+	border: 1px solid black;
+	padding: 6px;
+	margin-left: -41px;
 }

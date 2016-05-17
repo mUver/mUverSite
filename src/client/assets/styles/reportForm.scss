@@ -1,0 +1,37 @@
+.reportBack {
+	position: absolute;
+	margin: auto;
+	left:0;
+	right:0;
+	background-color: rgba(0,0,0,0.7);
+	height: 1000px;
+}
+
+.reportBox {
+	background: #384750;
+	width: 600px;
+	margin: auto;
+	text-align: center;
+	margin-top: 139px;
+	border-radius: 25px;
+	border: 1px solid black;
+}
+
+.reportHead {
+	color: white;
+	padding-top: 15px;
+}
+
+.reportDesc {
+	width: 500px;
+	height: 300px;
+	margin: 20px;
+}
+
+.cancelReport {
+	margin: 20px;
+}
+
+.submitReport {
+	margin: 20px;
+}

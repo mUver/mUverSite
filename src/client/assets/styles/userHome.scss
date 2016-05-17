@@ -1,8 +1,40 @@
 #userMain {
 	text-align: center;
+	margin: auto;
 	margin-top: 50px;
+	display:flex;
+	justify-content: space-between;
+	width: 800px;
 }
 
 .becomeMover {
-	margin-top: 100px;
+	padding: 10px;
+	background: #384750;
+	color: white;
+	cursor: pointer;
+}
+
+.becomeMover > img {
+	height: 400px;
+	width: 350px;
+	border: 1px solid white;
+	margin-bottom: 5px;
+}
+
+.toJobForm {
+	padding: 10px;
+	background: #384750;
+	color: white;
+	cursor: pointer;
+}
+
+.toJobForm > img {
+	height: 400px;
+	width: 350px;
+	border: 1px solid white;
+	margin-bottom: 5px;
+}
+
+.spacer {
+	width: 10px;
 }

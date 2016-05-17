@@ -1,0 +1,75 @@
+.MprogressBox {
+	width: 600px;
+	margin: auto;
+	margin-top: 40px;
+	border: 1px solid black;
+	background: #384750;
+	text-align: center;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+.MprogressHead {
+	color: white;
+}
+
+.MjobBox {
+	border: 1px solid white;
+	margin: 10px;
+	width: 400px;
+	margin: 10px;
+	text-align: left;
+	padding: 5px;
+}
+
+.MtitleBox {
+	color: white;
+}
+
+.MpriceBox {
+	color: white;
+}
+
+.MlocationBox {
+	color: white;
+}
+
+.MdestinationBox {
+	color: white;
+}
+
+.MphoneBox {
+	color: white;
+}
+
+.MstatusBox {
+	color: white;
+}
+
+.Mtitle, .Mprice, .Mlocation, .Mdestination, .Mphone, .Mstatus {
+	color: white;
+	text-decoration: underline;
+}
+
+.Mreport {
+	background: red;
+	color: white;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.Mcomplete {
+	background: green;
+	color: white;
+	margin-bottom: 15px;
+	cursor: pointer
+
+}
+
+.McompleteGray {
+	background: gray;
+	color: lightgray;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	outline: none;
+}
