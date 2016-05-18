@@ -4,8 +4,10 @@
 	margin-top: 40px;
 	background: #384750;
 	text-align: center;
-	border-radius: 50px;
+	border-radius: 12px;
 	padding: 10px;
+	box-shadow: 0px 2px 12px;
+	position: relative;
 }
 
 .UprogressHead {
@@ -25,66 +27,131 @@
 }
 
 .UtitleBox {
+	padding-top: 10px;
+    padding-left: 10px;
 	color: white;
 }
 
 .UpriceBox {
+	padding-top: 10px;
+    padding-left: 10px;
 	color: white;
 }
 
 .UlocationBox {
+	padding-top: 10px;
+    padding-left: 10px;
 	color: white;
 }
 
 .UdestinationBox {
+	padding-top: 10px;
+    padding-left: 10px;
 	color: white;
 }
 
 .UphoneBox {
+	padding-top: 10px;
+	padding-bottom: 15px;
+    padding-left: 10px;
 	color: white;
 }
 
 .UstatusBox {
 	color: white;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .UmoverNameBox {
+	padding-top: 10px;
+    padding-left: 10px;
 	color: white;
 }
 
 .UmoverPhoneBox {
+	padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
 	color: white;
 }
 
 .Utitle, .Uprice, .Ulocation, .Udestination, .Uphone, .Ustatus, .UmoverName, .UmoverPhone {
 	color: white;
-	text-decoration: underline;
+	border-bottom: solid 1px white;
+  	display: inline;
+	padding-bottom: 1px;
 }
 
+
+
 .Ureport {
-	background: red;
+	background: #EA2150;
 	color: white;
 	cursor: pointer;
-	margin-left: 142px;
+	height: 38px;
+	width: 50%;
+	border-bottom-left-radius: 6px;
+	margin-top: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border: none;
+	outline: none;
+	    /* margin-left: 100px; */
+}
+
+.Ureport:hover {
+	background:#6F0E25;
+}
+
+.Ucomplete:hover{
+	background:#18760E;
 }
 
 .Ucomplete {
-	background: green;
-	color: white;
+	background: #1FE500;
+    color: white;
 	cursor: pointer;
-	margin-left: 12px;
+	height: 38px;
+	width: 50%;
+	border-bottom-right-radius: 6px;
+	margin-top: 10px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: none;
+	outline: none;
 }
 
 .UreportGray {
 	background: gray;
 	color: lightgray;
+    color: white;
+	cursor: pointer;
+	height: 38px;
+	width: 50%;
+	border-bottom-left-radius: 6px;
+	margin-top: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;	
+	border: none;
 	outline: none;
-	margin-left: 142px;
 }
 
 .UcompleteGray {
 	background: gray;
 	color: lightgray;
-	margin-left: 12px;
+    color: white;
+	cursor: pointer;
+	height: 38px;
+	width: 50%;
+	border-bottom-right-radius: 6px;
+	margin-top: 10px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: none;
 	outline: none;
 }

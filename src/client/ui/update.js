@@ -92,10 +92,11 @@ export default React.createClass({
 
 	render:function() {
 		return (
-			<div>
+			<div className='updateContain'>
 				<Nav />
-				<UpdateTabs />
+				
 				<form className="updateForm" onSubmit={this.handleSubmit}>
+				<UpdateTabs />
 						{this.state.tab1 ? <UpdateUser /> : ""}			   
 			        	{this.state.tab2 ? <UpdateLocation /> : ""}
 			        	{this.state.tab3 ? <UpdateBank /> : ""}

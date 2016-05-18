@@ -53,7 +53,7 @@ export default React.createClass({
                       <a className="Uphone"> Your Phone Number: </a><br />
                       <div className="UphoneBox">{data.phone_number}</div><br />
                       <button className="UreportGray" >Report Mover</button>
-                      <button className="UcompleteGray" >Job Is Complete</button>               
+                      <button className="UcompleteGray" >Job Complete</button>               
                     </div>
                   )} else {
                     return (
@@ -71,7 +71,7 @@ export default React.createClass({
                       <a className="Uphone"> Your Phone Number: </a><br />
                       <div className="UphoneBox">{data.phone_number}</div><br />                
                       <button className="Ureport" onClick={this.reportClick.bind(this, data)} >Report Mover</button>
-                      <button className="Ucomplete" onClick={this.completeClick.bind(this, data)} >Job Is Complete</button>
+                      <button className="Ucomplete" onClick={this.completeClick.bind(this, data)} >Job Complete</button>
                     </div>
                   )
                   }
