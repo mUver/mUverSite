@@ -13,7 +13,7 @@ export default React.createClass({
     }
   },
 
-  componentWillMount: function () {
+  componentWillMount: function () { 
   	getCompletedJobs();
       this.unsubscribe = store.subscribe(function(){
         let currentStore = store.getState();
@@ -41,15 +41,14 @@ export default React.createClass({
 							<span className="CpriceHead"> Price </span>
 							<span className="CtimeHead"> Completed On </span>
 						</div>
-						{this.state.completed_jobs.map(function(data, i){	
-						console.log(data);			
+						{this.state.completed_jobs.map(function(data, i){			
 							return (
 								<div key={i} className="jobBox">
 									<a className="CtitleBox">{data.title}</a>
 									<a className="Cmover">{data.mover_profile.display_name}</a>
 									<a className="Cuser">{data.pickup_for}</a>
 									<a className="CpriceBox">${data.price}</a>
-									<a className="timeBox"> {data.modified_at}</a>
+									<a className="timeBox"> {data.modified_at} </a>
 								</div>
 							)
 						})}

@@ -50,6 +50,8 @@ export default React.createClass({
                     <div key={i} className="MjobBox">
                       <a className="Mstatus"> Status: </a>
                       <div className="MstatusBox"> {data.status} </div><br />
+                      <a className="Mtitle"> Title: </a><br />
+                      <div className="MtitleBox">{data.title}</div><br />
                       <a className="Mtitle"> Name: </a><br />
                       <div className="MtitleBox">{data.pickup_for}</div><br />
                       <a className="Mprice"> Price: </a><br />
@@ -68,6 +70,8 @@ export default React.createClass({
                     <div key={i} className="MjobBox">
                       <a className="Mstatus"> Status: </a>
                       <div className="MstatusBox"> {data.status} </div><br />
+                      <a className="Mtitle"> Title: </a><br />
+                      <div className="MtitleBox">{data.title}</div><br />
                       <a className="Mtitle"> Name: </a><br />
                       <div className="MtitleBox">{data.pickup_for}</div><br />
                       <a className="Mprice"> Price: </a><br />

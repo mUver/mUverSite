@@ -22,21 +22,11 @@ export default React.createClass({
   		var lat = pos.coords.latitude,
   			long = pos.coords.longitude,
   			cords = lat + "," + long;
-  			console.log(cords)
   		this.setState({
   			lat: lat,
   			long: long,
   			cords: cords
   		})
-      if (!cords) {
-        this.setState({
-          showLoc: false
-        })
-      } else {
-        this.setState({
-          showLoc: true
-        })
-      }
   	}.bind(this)
     getJobs();
   	navigator.geolocation.getCurrentPosition(c);
@@ -47,9 +37,9 @@ export default React.createClass({
       })
     }.bind(this));
 
-    this.check = setInterval(function(){
-      sortJobs(this.refs.sortBy.value);
-    }.bind(this) ,10000)
+    // this.check = setInterval(function(){
+    //   sortJobs();
+    // }.bind(this) ,10000)
   },
 
   componentWillUnmount: function () {
@@ -57,22 +47,25 @@ export default React.createClass({
     clearInterval(this.check);
   },
 
-  handleChange: function() {
-    sortJobs(this.refs.sortBy.value); 
+
+  priceUp: function() {
+    sortJobs("?sort=price-high")
   },
 
+  priceDown: function() {
+    sortJobs("?sort=price-low")
+  },
+
+  distanceDown: function() {
+    sortJobs("?lat=" + this.state.lat + "&" + "lng=" + this.state.long);
+  },
 
   handleClick: function (data, e) {
   	store.dispatch({
   		type:"GET_JOB",
   		job:data
-  	})
-    
+  	})    
     browserHistory.push("/jobView")
-  },
-
-  locClick: function(){
-    sortJobs("?lat=" + this.state.lat + "&" + "lng=" + this.state.long);
   },
 
 	render:function () {
@@ -80,28 +73,23 @@ export default React.createClass({
 			<div>
 				<Nav />
 				<div id="moverMain">
-					<h2> Jobs In Your Area </h2>
-          {this.state.showLoc ? <button className="locButton" onClick={this.locClick}> Use Current Location </button> : ""}
+					<h2> Jobs In Your Area </h2>         
           <br />
-            <select id="sortBy" ref="sortBy" onChange={this.handleChange}>
-              <option value="?"> Most Recent </option>
-              <option value="?sort=price-low"> Price Low to High </option>
-              <option value="?sort=price-high"> Price High to Low </option> 
-            </select><br />
 					<div className="jobList">
             <div className="tableHead">
-              <span className="titleTable"> Title </span>
-              <span className="priceTable"> Price </span>
-              <span className="distanceTable"> Distance from you </span>
-              <span className="tripTable"> Trip Distance </span>
-              <span className="infoTable"> More Info </span>
+              <div className="titleTable"> Title </div>
+              <div className="priceTable"><button className="entypo-up-open-mini" onClick={this.priceUp}></button><br /> Price <br /> <button className="entypo-down-open-mini" onClick={this.priceDown}></button></div>
+              <div className="distanceTable"><button className="entypo-up-open-mini"></button><br /> Distance From <br /><button className="entypo-down-open-mini" onClick={this.distanceDown}></button></div>
+              <div className="tripTable"><button className="entypo-up-open-mini" onClick={this.distanceUp}></button><br /> Trip Distance <br /><button className="entypo-down-open-mini" onClick={this.tripDown}></button></div>
+              <div className="infoTable"> More Info </div>
             </div>
 						{this.state.jobs.map(function(data, i){				
 							return (
 								<div key={i} className="jobBox">
 									<a className="titleBox">{data.title}</a>
 									<a className="priceBox">${data.price}</a>
-									<a className="distanceBox">{data.trip_distance} mi</a>
+                  <a className="distanceBox">{data.distance} miles</a>
+									<a className="distanceBox">{data.trip_distance} miles</a>
 									<button onClick={this.handleClick.bind(this, data)} className="jobView" > View Job </button>
 								</div>
 							)
