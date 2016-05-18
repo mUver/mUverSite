@@ -19,13 +19,13 @@ export default React.createClass({
 	continue1: function(e) {
     	e.preventDefault();
     	store.dispatch({
-    		type:"SHOW_TAB2",
+    		type:"SHOW_TAB",
     		tab1: false,
     		tab2: true,
     		tab3: false
     	})
     	store.dispatch({
-			type:"CLASS_TAB2",
+			type:"CLASS_TAB",
 			class1: "tab",
 			class2: "active",
 			class3: "tab"

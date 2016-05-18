@@ -78,8 +78,9 @@ export default React.createClass({
 	    			destination_a: this.state.destination_a,
 	    			destination_b: this.state.destination_b,
 	    			phone_number: this.state.phone_number
-				})
-				browserHistory.push("/home")
+				}).then(function(){
+          browserHistory.push("/home")         
+        })
 			}
 		}.bind(this));
 	},

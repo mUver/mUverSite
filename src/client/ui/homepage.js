@@ -2,24 +2,28 @@ import React from "react";
 import UserSwitch from "ui/userSwitch";
 import MoverSwitch from "ui/moverSwitch";
 import store from "store";
-import { getMover, getProgress, getCurrentJob } from "api/data";
+import { getMover, getProgress, getCurrentJob, getUser } from "api/data";
 
 export default React.createClass({
   getInitialState: function () {
     return {
-      mover: false,
+      profile:{
+        mover: false,
+      },
       in_progress: "",
       current_job: []
     }
   },
 
   componentWillMount: function () {
-    getMover()
+    getUser();
+    getMover();
     getProgress();
     getCurrentJob();
     this.unsubscribe = store.subscribe(function(){
       let currentStore = store.getState();
       this.setState({
+        profile: currentStore.userReducer.profile,
         mover: currentStore.userReducer.profile.mover,
         in_progress:currentStore.userReducer.in_progress,
         current_job: currentStore.jobsReducer.current_job

@@ -1,15 +1,8 @@
 import React from 'react';
 import { login, reset } from "api/data";
-import { Link, browserHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 
 export default React.createClass({
-  getInitialState:function(){
-    return {
-      username: "",
-      password: "",
-      profId: ""
-    }
-  },
 
   Udemo: function() {
     reset(14, function(){

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, browserHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import { login } from "api/data";
 import Login from "ui/login";
 import store from "store";

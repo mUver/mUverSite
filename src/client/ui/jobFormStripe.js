@@ -1,6 +1,5 @@
 import React from "react";
 import store from "store";
-import { Link, browserHistory } from 'react-router';
 
 require('assets/styles/cardInfo.scss');
 
@@ -40,7 +39,6 @@ export default React.createClass({
 	    	exp_month: this.state.exp_month,
 	    	exp_year: this.state.exp_year,
 	    	cvc: this.state.cvc
-
 		})
 	},
 

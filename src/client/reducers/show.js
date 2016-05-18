@@ -10,31 +10,15 @@ export default function (state = showInitialState, action) {
     
     case 'SHOW_REPORT':
       return {
-        	show: action.show,
+        show: action.show,
 		  	tab1: state.tab1,
 		  	tab2: state.tab2,
 		  	tab3: state.tab3
       };
 
-      case 'SHOW_TAB1':
+      case 'SHOW_TAB':
       	return {
-        	show: state.show,
-		  	tab1: action.tab1,
-		  	tab2: action.tab2,
-		  	tab3: action.tab3
-      };
-
-      case 'SHOW_TAB2':
-      	return {
-        	show: state.show,
-		  	tab1: action.tab1,
-		  	tab2: action.tab2,
-		  	tab3: action.tab3
-      };
-
-      case 'SHOW_TAB3':
-      	return {
-        	show: state.show,
+        show: state.show,
 		  	tab1: action.tab1,
 		  	tab2: action.tab2,
 		  	tab3: action.tab3

@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "ui/nav";
 import store from "store";
-import { Link, browserHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import { getMoverId, confirmJob } from "api/data";
 
 require('assets/styles/jobView.scss');
@@ -40,8 +40,9 @@ export default React.createClass({
 	  		type: "PROGRESS",
 	  		in_progress: true
 	  	})
-	    confirmJob(this.state.job.id, this.state.mover_profile);
-	  	browserHistory.push("/home")
+	    confirmJob(this.state.job.id, this.state.mover_profile).then(function(){
+	    	browserHistory.push("/home")
+	    })
 	  },
 
 	render:function() {
