@@ -2,7 +2,7 @@
 	display: inline-block;
 	position: relative;
 	bottom: 45px;
-	right: 285px;
+	right: 284px;
 }
 
 .tab {
@@ -22,7 +22,7 @@
 
 .tab:hover {
 	border-bottom: 0;
-	background: green;
+	background: #228F6E;
 }
 
 .active {
@@ -31,7 +31,7 @@
 	border-bottom: none;
 	padding-bottom: 1px;
 	color: white;
-	background: green;
+	background: #228F6E;
 	padding: 10px;
 	position: relative;
 	padding-top: 11px;
