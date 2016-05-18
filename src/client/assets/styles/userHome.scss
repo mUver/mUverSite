@@ -27,13 +27,13 @@ body {
 
 .becomeMover > img {
 	height: 400px;
-	// border-radius: 25px;
-	width: 85%;
+	width: 465px;
 	margin-bottom: 5px;
 	position: relative;
 	background: white;
 	border-radius: 36px;
 	border: 9px solid black;
+	padding: 56px;
 }
 
 .becomeMover:hover img {
@@ -96,7 +96,7 @@ button {
 .toJobForm > img {
 	height: 400px;
 	// border-radius: 25px;
-	width: 85%;
+	width: 465px;
 	margin-bottom: 5px;
 	position: relative;
 }
