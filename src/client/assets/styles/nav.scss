@@ -10,18 +10,21 @@
 .logo {
 	height: 100px;
     width: 160px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .profile {
 	height: 100px;
 	width: 240px;
-	padding-top: 20px;
+	padding-top: 32px;
+	padding-right: 30px;
+	text-align: right;
 }
 
 .userTag {
 	color: white;
 	font-size: 24px;
+	position: relative;
 }
 
 .settingsTag {
@@ -29,21 +32,25 @@
 	position: relative;
 	top: 22px;
 	font-size: 16px;
+	text-decoration: none;
 }
 
 .profileTag {
 	color: white;
+	text-decoration: none;
 	font-size: 16px;
 }
 
 .profileTag:visited {
 	color: white;
+	
 }
 
 .historyTag {
 	color: white;
 	position: relative;
 	font-size: 16px;
+	text-decoration: none;
 }
 
 .historyTag:visited {
@@ -54,6 +61,7 @@
 	color: white;
 	position: relative;
 	font-size: 16px;
+	text-decoration: none;
 }
 
 .logoutTag:visited {
@@ -61,12 +69,19 @@
 }
 
 .dropdown {
-	background: green;
-	display: none;
+	background: rgb(22, 28, 31);
+    background: rgba(22, 28, 31, .50);
+    display: none;
+    z-index: 999;
+    right: -91px;
+    position: relative;
+    top: 6px;
+    width: 150px;
 }
 
 .settingsUL {
 	color: white;
+	padding-left: 0px;
 }
 
 .settingsUL:hover > ul {
@@ -78,7 +93,14 @@
 }
 
 .dropdown > li {
-	border: 1px solid black;
-	padding: 6px;
-	margin-left: -41px;
+	padding: 10px;
+	margin-left: -36px;
+	text-align: right;
+	padding-right: 35px;
+	color: black;
+	width: 147px;
+}
+
+.dropdown > li > a:hover {
+	background-color: purple;
 }

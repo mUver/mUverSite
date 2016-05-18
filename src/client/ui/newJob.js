@@ -88,8 +88,8 @@ export default React.createClass({
 		return (
 			<div>
 				<Nav />
-				<JobFormTabs />
 				<div id="newjob">
+        <JobFormTabs />
 					<h2 className="jobHead" > Create A New Job </h2>
 					<form className="jobForm" onSubmit={this.handleSubmit}>			          
 			        	{this.state.tab1 ? <JobFormUser /> : ""}			   

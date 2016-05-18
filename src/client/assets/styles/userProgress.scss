@@ -2,7 +2,6 @@
 	width: 600px;
 	margin: auto;
 	margin-top: 40px;
-	border: 1px solid black;
 	background: #384750;
 	text-align: center;
 	border-radius: 50px;
@@ -11,15 +10,18 @@
 
 .UprogressHead {
 	color: white;
+	text-shadow: 2px 2px #000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 30px;
 }
 
 .UjobBox {
-	border: 1px solid white;
 	margin: 10px;
-	width: 400px;
-	margin: 10px;
+	width: 500px;
+	margin: 8px;
 	text-align: left;
-	padding: 5px;
+	padding: 10px;
 }
 
 .UtitleBox {
@@ -63,28 +65,26 @@
 	background: red;
 	color: white;
 	cursor: pointer;
-	margin-bottom: 15px;
+	margin-left: 142px;
 }
 
 .Ucomplete {
 	background: green;
 	color: white;
 	cursor: pointer;
-	margin-bottom: 15px;
-	margin-left: 15px;
+	margin-left: 12px;
 }
 
 .UreportGray {
 	background: gray;
 	color: lightgray;
-	margin-bottom: 15px;
 	outline: none;
+	margin-left: 142px;
 }
 
 .UcompleteGray {
 	background: gray;
 	color: lightgray;
-	margin-bottom: 15px;
-	margin-left: 15px;
+	margin-left: 12px;
 	outline: none;
 }

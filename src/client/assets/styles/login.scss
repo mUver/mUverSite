@@ -4,6 +4,16 @@
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
+.loginBody {
+	background-image: url("../images/pexels-photo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: 105%;
+	height: 100%;
+	padding: 211px
+
+}
 
 .entypo-user {
 	color: gray;
@@ -18,39 +28,83 @@
 }
 
 .login {
-	border: 1px solid black;
-	background: #384750;
+	border: 1px transparent;
+	background: rgb(117, 143, 155);
+    background: rgba(117, 143, 155, .86);
 	margin: auto;
-	width: 800px;
-	height: 300px;
-	margin-top: 200px;
+	width: 400px;
+	height: 30%;
 	text-align: center;
+	border-radius: 25px;
+	box-shadow: 2px 6px 12px;
 }
 
 #username {
-	width: 400px;
+	width: 80%;
 	margin: auto;
 	text-indent: 40px;
 	margin-bottom: 20px;
-	box-shadow: 2px 6px 12px;
+	box-shadow: 0px 2px 12px;
 	height: 30px;
 }
 
 #password {
-	width: 400px;
+	width: 80%;
 	margin: auto;
 	text-indent: 40px;
 	margin-bottom: 20px;
-	box-shadow: 2px 6px 12px;
+	box-shadow: 0px 2px 12px;
 	height: 30px;
 }
 
+.loginForm {
+	padding: 2%;
+	margin-bottom: 2%;
+}
+
 .loginHead {
+	padding-top: 3%;
+	font-size: 220%;
 	color: white;
+	margin-bottom: 2%;
+	text-shadow: 2px 2px #000;
+}
+
+.loginButton {
+	border-radius: 8px;
+	width: 23%;
+	background-color: white;
+	box-shadow: 0px 2px 12px;
+}
+
+.registerButton {
+	border-radius: 8px;
+	width: 100px;
+	background-color: white;
+	box-shadow: 0px 2px 12px;
+}
+
+.MoverTest {
+	border-radius: 8px;
+	width: 110px;
+	background-color: white;
+	box-shadow: 0px 2px 12px;
+}
+
+.UserTest {
+	margin: 6px;
+	border-radius: 8px;
+	width: 136px;
+	background-color: white;
+	box-shadow: 0px 2px 12px;
 }
 
 .accountHead {
 	color: white;
+	font-size: 122%;
+	text-shadow: 1px 1px #000;
+	margin-top: 3%;
+	margin-bottom: 0%;
 }
 
 .UserTest {
