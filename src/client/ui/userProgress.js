@@ -11,15 +11,26 @@ require('assets/styles/userProgress.scss');
 export default React.createClass({
   getInitialState:function(){
     return {
+      status1: "",
+      status2: "",
+      status3: "",
       mover_profile: "",
       show:false
     }
   },
 
   componentWillMount:function(){
-    this.check = setInterval(function(){
-      getCurrentJob();
-    },10000)
+    this.unsubscribe = store.subscribe(function(){
+        let currentStore = store.getState();
+        this.setState({
+          status1: currentStore.statusReducer.status1,
+          status2: currentStore.statusReducer.status2,
+          status3: currentStore.statusReducer.status3
+        })
+      }.bind(this));
+    // this.check = setInterval(function(){
+    //   getCurrentJob();
+    // },10000)
   },
 
   componentWillUnmount:function(){
@@ -43,6 +54,13 @@ export default React.createClass({
 			<div>
         {this.state.show ? <ReportForm /> : ""}
 				<Nav />
+          <ul className="statusBar">
+            <li className={this.state.status1}> Waiting for mover </li>
+            <li className="space"></li>
+            <li className={this.state.status2}> Mover is on the way </li>
+            <li className="space"></li>
+            <li className={this.state.status3}> Job is Complete </li>
+          </ul>
 					<div className="UprogressBox">
 						<h2 className="UprogressHead"> Current Job </h2>
 						<div className="UcurrentJob">

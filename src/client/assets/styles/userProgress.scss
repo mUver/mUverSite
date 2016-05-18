@@ -1,7 +1,7 @@
 .UprogressBox {
 	width: 600px;
 	margin: auto;
-	margin-top: 40px;
+	margin-top: 10px;
 	background: #384750;
 	text-align: center;
 	border-radius: 12px;
@@ -98,7 +98,6 @@
 	bottom: 0;
 	border: none;
 	outline: none;
-	    /* margin-left: 100px; */
 }
 
 .Ureport:hover {
@@ -154,4 +153,56 @@
 	bottom: 0;
 	border: none;
 	outline: none;
+}
+
+.statusBar {
+	width: 600px;
+	margin: auto;
+	display: flex;
+	margin-left: 389px;
+	margin-top: 10px;
+}
+
+.activeStatus {
+	background: #228F6E;
+	padding: 10px;
+	border: 2px solid white;
+	color: white;
+	height: 40px;
+	width: 170px;  
+	text-align: center;
+}
+
+.start {
+	background: gray;
+	color:lightgray;
+	padding: 10px;
+	height: 40px;
+	width: 170px;
+	text-align: center;
+}
+
+.middle {
+	background: gray;
+	color:lightgray;
+	padding: 10px;
+	height: 40px;
+	width: 180px;
+	text-align: center;
+}
+
+.end {
+	background: gray;
+	color: lightgray;
+	padding: 10px;
+	height: 40px;
+	width: 170px;
+	text-align: center;
+}
+
+.space {
+	border: 1px solid black;
+	width: 50px;
+	height: 0px;
+	margin-top: 17px;
 }

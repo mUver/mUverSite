@@ -11,6 +11,7 @@ import ShowReducer from "reducers/show";
 import ClassReducer from "reducers/class";
 import NewJobReducer from "reducers/newJob";
 import UpdateReducer from "reducers/update";
+import StatusReducer from "reducers/status";
 
 // Combine Reducers
 var reducers = combineReducers({
@@ -20,6 +21,7 @@ var reducers = combineReducers({
   classReducer: ClassReducer,
   newJobReducer: NewJobReducer,
   updateReducer: UpdateReducer,
+  statusReducer: StatusReducer,
   // more...
 });
 
