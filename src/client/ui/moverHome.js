@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "ui/nav";
 import { getJobs, sortJobs } from "api/data";
 import store from "store";
-import { Link, browserHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 
 require('assets/styles/moverHome.scss');
 
@@ -38,26 +38,29 @@ export default React.createClass({
         })
       }
   	}.bind(this)
-  	getJobs();
+    getJobs();
   	navigator.geolocation.getCurrentPosition(c);
     this.unsubscribe = store.subscribe(function(){
       let currentStore = store.getState();
       this.setState({
-        jobs: currentStore.jobsReducer.jobs
+        jobs: currentStore.jobsReducer.jobs,
       })
     }.bind(this));
+
+    this.check = setInterval(function(){
+      sortJobs(this.refs.sortBy.value);
+    }.bind(this) ,10000)
   },
 
   componentWillUnmount: function () {
     this.unsubscribe();
+    clearInterval(this.check);
   },
 
   handleChange: function() {
-    sortJobs(this.state.sortValue);
-    this.setState({
-      sortValue: this.refs.sortBy.value
-    })
+    sortJobs(this.refs.sortBy.value); 
   },
+
 
   handleClick: function (data, e) {
   	store.dispatch({

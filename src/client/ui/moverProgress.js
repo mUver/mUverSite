@@ -1,9 +1,10 @@
 import React from "react";
 import Nav from "ui/nav";
 import store from "store";
-import { Link, browserHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import { moverConfirm } from "api/data";
 import ReportForm from "ui/reportForm";
+import { getCurrentJob } from "api/data";
 
 require('assets/styles/moverProgress.scss');
 
@@ -12,6 +13,16 @@ export default React.createClass({
     return {
       show:false
     }
+  },
+
+  componentWillMount:function(){
+    this.check = setInterval(function(){
+      getCurrentJob();
+    },10000)
+  },
+
+  componentWillUnmount:function(){
+    clearInterval(this.check);
   },
   
   completeClick:function(item, e){

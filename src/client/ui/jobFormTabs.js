@@ -29,13 +29,13 @@ export default React.createClass({
 
 	onStep1:function() {
 		store.dispatch({
-			type: "SHOW_TAB1",
+			type: "SHOW_TAB",
 			tab1: true,
 			tab2: false,
 			tab3: false
 		})
 		store.dispatch({
-			type:"CLASS_TAB1",
+			type:"CLASS_TAB",
 			class1: "active",
 			class2: "tab",
 			class3: "tab"
@@ -44,13 +44,13 @@ export default React.createClass({
 	},
 	onStep2:function() {
 		store.dispatch({
-			type: "SHOW_TAB2",
+			type: "SHOW_TAB",
 			tab1: false,
 			tab2: true,
 			tab3: false
 		})
 		store.dispatch({
-			type:"CLASS_TAB2",
+			type:"CLASS_TAB",
 			class1: "tab",
 			class2: "active",
 			class3: "tab"
@@ -59,13 +59,13 @@ export default React.createClass({
 
 	onStep3:function() {
 		store.dispatch({
-			type: "SHOW_TAB3",
+			type: "SHOW_TAB",
 			tab1: false,
 			tab2: false,
 			tab3: true
 		})
 		store.dispatch({
-			type:"CLASS_TAB3",
+			type:"CLASS_TAB",
 			class1: "tab",
 			class2: "tab",
 			class3: "active"
