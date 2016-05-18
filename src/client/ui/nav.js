@@ -57,7 +57,6 @@ export default React.createClass({
           <ul className="settingsUL">
             Settings
             <ul className="dropdown">
-  				    <li><Link to="/profile" className="profileTag"> Profile </Link></li>
               <li><Link to="/history" className="historyTag"> Job History </Link></li>
   					  <li><Link to="/" onClick={this.logoutClick} className="logoutTag"> Logout </Link></li>
             </ul>

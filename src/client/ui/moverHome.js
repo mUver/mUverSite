@@ -89,6 +89,13 @@ export default React.createClass({
               <option value="?sort=price-high"> Price High to Low </option> 
             </select><br />
 					<div className="jobList">
+            <div className="tableHead">
+              <span className="titleTable"> Title </span>
+              <span className="priceTable"> Price </span>
+              <span className="distanceTable"> Distance from you </span>
+              <span className="tripTable"> Trip Distance </span>
+              <span className="infoTable"> More Info </span>
+            </div>
 						{this.state.jobs.map(function(data, i){				
 							return (
 								<div key={i} className="jobBox">
