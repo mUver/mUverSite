@@ -1,39 +1,180 @@
-.CtitleHead {
+.historyBox {
+	margin: auto;
+}
 
+.historyBox h2 {
+	color: white;
+	text-shadow: 2px 2px #000;
+	margin-top: 4%;
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.jobBox {
+}
+
+.historyList{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 2%;
+	margin-left: 15%;
+	margin-right: 15%;
+    width: 720px;
+    margin: auto;
+}
+
+.completedHeading{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	padding-top: 1%;
+}
+
+.completedHeading div {
+	border-bottom: 1px solid black;
+}
+
+.CtitleHead {
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 }
 
 .CmoverHead {
-
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 }
 
 .CuserHead {
-
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 }
 
 .CpriceHead {
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 
 }
 
 .CtimeHead {
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 
 }
 
 .CtitleBox {
-
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 }
 
 .CpriceBox {
-
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 }
 
 .Cmover {
-
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 }
 
 .Cuser {
-
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 }
 
 .timeBox {
-	
+	height: 50px;
+	line-height: 50px;
+	width: 144px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	background: #384750;
+    color: #ddd;
 }

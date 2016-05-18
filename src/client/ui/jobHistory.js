@@ -35,11 +35,11 @@ export default React.createClass({
 					<h2> Completed Jobs </h2>
 					<div className="historyList">
 						<div className="completedHeading">
-							<span className="CtitleHead"> Title </span>
-							<span className="CmoverHead"> Mover Name </span>
-							<span className="CuserHead"> Customer Name </span>
-							<span className="CpriceHead"> Price </span>
-							<span className="CtimeHead"> Completed On </span>
+							<div className="CtitleHead"> Title </div>
+							<div className="CmoverHead"> Mover Name </div>
+							<div className="CuserHead"> Customer Name </div>
+							<div className="CpriceHead"> Price </div>
+							<div className="CtimeHead"> Completed On </div>
 						</div>
 						{this.state.completed_jobs.map(function(data, i){			
 							return (
