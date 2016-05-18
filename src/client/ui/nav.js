@@ -4,7 +4,7 @@ import { getUser, getCompletedJobs, logout } from "api/data";
 import { Link, browserHistory } from 'react-router';
 
 require('assets/styles/nav.scss');
-var img = require("assets/images/logo.png");
+var img = require("assets/images/logo-muver.png");
 
 export default React.createClass({
 	getInitialState: function () {
