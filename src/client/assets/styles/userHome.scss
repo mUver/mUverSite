@@ -15,11 +15,13 @@ body {
 	font-size: 20px;
     padding: 10px;
     width: 50%;
+    max-width: 555px;
     /* border-radius: 25px; */
     background: #758F9B;
     color: white;
     cursor: pointer;
     position: relative;
+    margin: auto;
     padding-top: 50px;
 }
 
@@ -31,7 +33,7 @@ body {
 	position: relative;
 	background: white;
 	border-radius: 36px;
-	border: 10px solid black;
+	border: 9px solid black;
 }
 
 .becomeMover:hover img {
@@ -44,25 +46,29 @@ body {
 	display: none;
 	font-size: 40px;
 	background:red;
+	border: 2px solid white;
 }
 
 .becomeMover:hover span {
 	display: block;
 	position: absolute;
-	top:180px;
-	right:114px;
+	top:200px;
+	left:114px;
+	margin: auto;
 }
 
 .toJobForm {
 	font-size: 20px;
     padding: 10px;
     width: 50%;
+    max-width: 555px;
     /* border-radius: 25px; */
     background: #758F9B;
     color: white;
     cursor: pointer;
     position:relative;
     padding-top: 50px;
+
 }
 
 .toJobForm img {
@@ -73,12 +79,14 @@ body {
 	display: none;
 	font-size: 40px;
 	background:red;
+	border: 2px solid white;
 }
 .toJobForm:hover span {
-	display: block;
+	display: inline-block;
 	position: absolute;
-	top:180px;
+	top:200px;
 	left:114px;
+	margin: auto;
 }
 
 button {
