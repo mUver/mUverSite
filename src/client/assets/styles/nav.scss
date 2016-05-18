@@ -69,8 +69,8 @@
 }
 
 .dropdown {
-	background: rgb(22, 28, 31);
-    background: rgba(22, 28, 31, .50);
+	background: rgb(56, 71, 80);
+    background: rgba(56, 71, 80, 0.9);
     display: none;
     z-index: 999;
     right: -91px;
@@ -103,5 +103,5 @@
 }
 
 .dropdown > li > a:hover {
-	background-color: purple;
+	color: black;
 }
