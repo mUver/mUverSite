@@ -23,7 +23,7 @@ li {
 }
 
 #moverMain {
-	margin-top: 80px;
+	margin-top: 40px;
 	width: 100%;
 	text-align: center;
 }
@@ -38,7 +38,7 @@ li {
 
 .jobList {
 	margin: auto;
-	width: 600px;
+	width: 750px;
 }
 
 .jobBox {
@@ -47,6 +47,11 @@ li {
 	height: 51px;
 	border-bottom: 1px solid black;
 }
+
+// .jobBox:nth-child(even) {
+//     background: #000000;
+// }
+
 
 .titleBox {
 	height: 50px;
@@ -110,7 +115,7 @@ li {
 
 .titleTable {
 	height: 50px;
-	width: 120px;
+	width: 150px;
 	padding-left: 10px;
 	padding-right: 10px;
 	overflow: hidden;
@@ -123,7 +128,7 @@ li {
 
 .priceTable {
 	height: 50px;
-	width: 82px;
+	width: 100px;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
@@ -138,7 +143,7 @@ li {
 
 .distanceTable {
 	height: 50px;
-    width: 121px;
+    width: 150px;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
     padding-left: 10px;
@@ -153,7 +158,7 @@ li {
 
 .tripTable{
 	height: 50px;
-	width: 119px;
+	width: 150px;
 	border-bottom: 1px solid black;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -167,7 +172,7 @@ li {
 .infoTable{
 	height: 50px;
 	line-height: 50px;
-	width: 158px;
+	width: 199px;
 	background: #384750;
     color: #ddd;
     border:none;
