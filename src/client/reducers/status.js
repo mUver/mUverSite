@@ -7,7 +7,7 @@ const statusInitialState = {
 export default function (state = statusInitialState, action) {
   switch (action.type) {
 
-      case 'CLASS_TAB':
+      case 'STATUS':
       	return {
 		  	  status1: action.status1,
 		  	  status2: action.status2,

@@ -40,6 +40,12 @@ export default React.createClass({
 	  		type: "PROGRESS",
 	  		in_progress: true
 	  	})
+	  	store.dispatch({
+	  		type:"STATUS",
+	  		status1: "start",
+	  		status2: "active",
+	  		status3: "end"
+	  	})
 	    confirmJob(this.state.job.id, this.state.mover_profile).then(function(){
 	    	browserHistory.push("/home")
 	    })

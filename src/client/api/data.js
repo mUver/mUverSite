@@ -19,6 +19,10 @@ export function reset(id, cb) {
   })
 }
 
+export function changeColor() {
+
+}
+
 export function getProgress() {
   return api.get("profile/").then(function(resp){
     store.dispatch({

@@ -4,7 +4,7 @@ import store from "store";
 import { userConfirm, reportMover } from "api/data";
 import ReportForm from "ui/reportForm";
 import { browserHistory } from 'react-router';
-import { getCurrentJob } from 'api/data';
+import { getCurrentJob, changeColor } from 'api/data';
 
 require('assets/styles/userProgress.scss');
 
@@ -28,9 +28,9 @@ export default React.createClass({
           status3: currentStore.statusReducer.status3
         })
       }.bind(this));
-    // this.check = setInterval(function(){
-    //   getCurrentJob();
-    // },10000)
+    this.check = setInterval(function(){
+      getCurrentJob();
+    },10000)
   },
 
   componentWillUnmount:function(){
