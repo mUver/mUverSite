@@ -18,7 +18,7 @@ export default React.createClass({
   componentWillMount:function(){
     this.check = setInterval(function(){
       getCurrentJob();
-    },10000)
+    },2000)
   },
 
   componentWillUnmount:function(){
@@ -48,9 +48,9 @@ export default React.createClass({
                       <ul className="statusBar">
                         <li className="start"> Waiting for mover </li>
                         <li className="space"></li>
-                        <li className="activeStatus"> Mover is on the way </li>
+                        <li className="middle"> Mover is on the way </li>
                         <li className="space"></li>
-                        <li className="end"> Job is Complete </li>
+                        <li className="activeStatus"> Job is Complete </li>
                       </ul>
             					<div className="MprogressBox">
             						<h2 className="MprogressHead"> Current Job </h2>
@@ -82,9 +82,9 @@ export default React.createClass({
                         <ul className="statusBar">
                           <li className="start"> Waiting for mover </li>
                           <li className="space"></li>
-                          <li className="middle"> Mover is on the way </li>
+                          <li className="activeStatus"> Mover is on the way </li>
                           <li className="space"></li>
-                          <li className="activeStatus"> Job is Complete </li>
+                          <li className="end"> Job is Complete </li>
                         </ul>
                         <div className="MprogressBox">
                           <h2 className="MprogressHead"> Current Job </h2>

@@ -30,7 +30,7 @@ export default React.createClass({
       }.bind(this));
     this.check = setInterval(function(){
       getCurrentJob
-    },10000)
+    },2000)
   },
 
   componentWillUnmount:function(){
