@@ -29,7 +29,7 @@ export default React.createClass({
         })
       }.bind(this));
     this.check = setInterval(function(){
-      getCurrentJob
+      getCurrentJob();
     },2000)
   },
 
