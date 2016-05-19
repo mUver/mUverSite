@@ -48,9 +48,6 @@ li {
 	border-bottom: 1px solid black;
 }
 
-// .jobBox:nth-child(even) {
-//     background: #000000;
-// }
 
 
 .titleBox {
@@ -64,6 +61,8 @@ li {
   	background: #384750;
     color: #ddd;
 }
+
+
 
 .priceBox {
 	height: 50px;
@@ -183,5 +182,9 @@ li {
 .tableHead {
 	display: -webkit-box;
 }
+
+// .jobBox:nth-child(even) {
+//     background: #000000;
+// }
 
 
