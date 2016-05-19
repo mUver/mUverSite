@@ -60,6 +60,14 @@ export default React.createClass({
     sortJobs("?lat=" + this.state.lat + "&" + "lng=" + this.state.long);
   },
 
+  tripUp: function() {
+    sortJobs("?sort=dist-high")
+  },
+
+  tripDown: function() {
+    sortJobs("?sort=dist-low")
+  },
+
   handleClick: function (data, e) {
   	store.dispatch({
   		type:"GET_JOB",
@@ -80,7 +88,7 @@ export default React.createClass({
               <div className="titleTable"> Title </div>
               <div className="priceTable"><button className="entypo-up-open-mini" onClick={this.priceUp}></button><br /> Price <br /> <button className="entypo-down-open-mini" onClick={this.priceDown}></button></div>
               <div className="distanceTable"><button className="entypo-up-open-mini"></button><br /> Distance From <br /><button className="entypo-down-open-mini" onClick={this.distanceDown}></button></div>
-              <div className="tripTable"><button className="entypo-up-open-mini" onClick={this.distanceUp}></button><br /> Trip Distance <br /><button className="entypo-down-open-mini" onClick={this.tripDown}></button></div>
+              <div className="tripTable"><button className="entypo-up-open-mini" onClick={this.tripUp}></button><br /> Trip Distance <br /><button className="entypo-down-open-mini" onClick={this.tripDown}></button></div>
               <div className="infoTable"> More Info </div>
             </div>
 						{this.state.jobs.map(function(data, i){				
