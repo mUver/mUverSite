@@ -29,6 +29,7 @@ export default React.createClass({
         })
       }.bind(this));
     this.check = setInterval(function(){
+      getCurrentJob
     },10000)
   },
 
@@ -43,9 +44,9 @@ export default React.createClass({
 
   reportClick:function(data){
     //reportMover(data.mover_profile);
-    this.setState({
-      show:true
-    })
+    // this.setState({
+    //   show:true
+    // })
   },
 
 	render: function() {
