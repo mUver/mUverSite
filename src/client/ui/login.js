@@ -23,6 +23,22 @@ export default React.createClass({
     });
   },
 
+  Udemo2: function() {
+    reset(15, function(){
+      login("test_customer2", "pass_word").then(function(resp){
+        browserHistory.push("/home")
+      })  
+    });
+  },
+
+  Mdemo2: function() {
+    reset(16, function(){
+      login("mover_test2", "pass_word").then(function(resp){
+        browserHistory.push("/home")
+      })  
+    });
+  },
+
   render: function () {
     return (
       <div className="loginBody">
@@ -37,6 +53,8 @@ export default React.createClass({
           <button className="registerButton" onClick={this.props.onClick}>Register</button>
           <button className="UserTest" onClick={this.Udemo} > Demo Customer </button>
           <button className="MoverTest" onClick={this.Mdemo} > Demo Mover </button>
+          <button className="UserTest2" onClick={this.Udemo2} > Demo Customer 2 </button>
+          <button className="MoverTest2" onClick={this.Mdemo2} > Demo Mover 2 </button>
       </div>
       </div>
     )
