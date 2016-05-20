@@ -38,8 +38,9 @@ export default React.createClass({
   },
 
   completeClick:function(item, e){
-    userConfirm(item.id);
-    browserHistory.push("/history");
+    userConfirm(item.id).then(function(){
+      browserHistory.push("/history");
+    });    
   },
 
   reportClick:function(data){

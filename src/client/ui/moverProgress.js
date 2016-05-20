@@ -26,8 +26,9 @@ export default React.createClass({
   },
   
   completeClick:function(item, e){
-    moverConfirm(item.id);
-    browserHistory.push("/history");
+    moverConfirm(item.id).then(function(){
+      browserHistory.push("/history");
+    });   
   },
 
   reportClick:function() {
