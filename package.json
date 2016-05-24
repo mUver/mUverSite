@@ -2,6 +2,10 @@
   "name": "mUver",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "6.1.0",
+    "npm": "3.8.6"
+  },
   "main": "bin/server/index.js",
   "scripts": {
     "lint": "eslint . ./",
@@ -139,10 +143,6 @@
         2,
         "never"
       ]
-    },
-    "engines": {
-    "node": "6.1.0",
-    "npm": "3.8.6"
-    },
+    }
   }
 }
