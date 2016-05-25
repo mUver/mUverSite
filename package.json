@@ -67,7 +67,7 @@
     "html-webpack-plugin": "^2.16.0",
     "json-loader": "^0.5.4",
     "node-sass": "^3.4.2",
-    "nodemon": "^1.9.1",
+    "nodemon": "^1.9.2",
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.2.3",
