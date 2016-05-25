@@ -12,8 +12,8 @@
     "lint:fix": "npm run lint -- --fix",
     "start": "nodemon",
     "start:prod": "NODE_ENV=production PORT=$PORT node bin/server",
-    "compile": "DEBUG=app:* NODE_ENV=production BUILD=TRUE node bin/compile",
-    "deploy": "rm -rf dist && npm run compile && git add dist -A && git commit -m 'deploy' && git push heroku master"
+    "bundle": "DEBUG=app:* NODE_ENV=production BUILD=TRUE node bin/bundle",
+    "deploy": "rm -rf dist && npm run bundle && git add dist -A && git commit -m 'deploy' && git push heroku master"
   },
   "author": "",
   "license": "ISC",
