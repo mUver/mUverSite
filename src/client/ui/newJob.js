@@ -3,7 +3,7 @@ import Nav from "ui/nav";
 import store from "store";
 import { Link, browserHistory } from 'react-router';
 import JobFormTabs from "ui/jobFormTabs";
-import JobFormUser from "ui/jobformUser";
+import JobFormUser from "ui/jobFormUser";
 import JobFormJob from "ui/jobFormJob";
 import JobFormStripe from "ui/jobFormStripe";
 import { addNewJob, addCustomer } from "api/data";

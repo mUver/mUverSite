@@ -1,6 +1,5 @@
 ## All
 node_modules
-config/secret.js
 .DS_Store
 
 ## Vim
