@@ -13,7 +13,7 @@ import Homepage from "ui/homepage";
 import NewJob from "ui/newJob";
 import Update from "ui/update";
 import JobView from "ui/jobView";
-import History from "ui/jobhistory";
+import History from "ui/jobHistory";
 import NotFound from 'ui/notfound';
 
 
