@@ -3,6 +3,7 @@ import store from "store";
 import { browserHistory } from 'react-router';
 import Nav from "ui/nav";
 import { getCompletedJobs } from "api/data";
+import moment from 'moment';
 
 require('assets/styles/jobHistory.scss');
 
@@ -48,7 +49,7 @@ export default React.createClass({
 									<a className="Cmover">{data.mover_profile.display_name}</a>
 									<a className="Cuser">{data.pickup_for}</a>
 									<a className="CpriceBox">${data.price}</a>
-									<a className="timeBox"> {data.modified_at} </a>
+									<a className="timeBox"> {moment(data.modified_at).format('MM/DD/YY')} </a>
 								</div>
 							)
 						})}

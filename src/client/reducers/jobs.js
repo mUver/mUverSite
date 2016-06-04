@@ -43,6 +43,55 @@ export default function (state = jobsInitialState, action) {
         completed_jobs: action.completed_jobs
       };
 
+    case 'FILTER_JOBS':
+
+      switch(action.filter){
+
+        case 'PRICE_HIGH':
+         
+          
+          return {
+            ...state,
+            jobs:state.jobs.sort((a,b) => a.price > b.price)
+          }
+
+        case 'PRICE_LOW':
+         
+          
+          return {
+            ...state,
+            jobs:state.jobs.sort((a,b) => b.price > a.price)
+          }
+
+        case 'TRIP_HIGH':
+        
+          return {
+            ...state,
+            jobs:state.jobs.sort((a,b)=> Number(a.trip_distance) > Number(b.trip_distance))
+          }
+
+        case 'TRIP_LOW':
+          return {
+            ...state,
+            jobs:state.jobs.sort((a,b)=> Number(b.trip_distance) > Number(a.trip_distance))
+          }
+
+        case 'DISTANCE_HIGH':
+        console.log(state.jobs)
+          return {
+            ...state,
+            jobs:state.jobs.sort((a,b)=> Number(b.trip_distance) > Number(a.trip_distance))
+          }
+
+        case 'DISTANCE_LOW':
+          return {
+            ...state,
+            jobs:state.jobs.sort((a,b)=> Number(b.trip_distance) > Number(a.trip_distance))
+          }
+
+      }
+
+
     default:
       return state;
   }

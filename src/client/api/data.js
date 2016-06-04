@@ -44,6 +44,13 @@ export function reportMover(mover) {
 
 }
 
+export function filterJobs(data) {
+  store.dispatch({
+    type:"FILTER_JOBS",
+    filter:data.filter
+  })
+}
+
 export function getCurrentJob() {
   return api.get("profile/jobs/").then(function(resp){
     store.dispatch({

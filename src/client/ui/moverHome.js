@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "ui/nav";
-import { getJobs, sortJobs } from "api/data";
+import { getJobs, sortJobs,filterJobs } from "api/data";
 import store from "store";
 import { browserHistory } from 'react-router';
 
@@ -26,9 +26,12 @@ export default React.createClass({
   			lat: lat,
   			long: long,
   			cords: cords
-  		})
+  		},function(){
+        sortJobs("?lat=" + this.state.lat + "&" + "lng=" + this.state.long);
+      })
   	}.bind(this)
     getJobs();
+
   	navigator.geolocation.getCurrentPosition(c);
     this.unsubscribe = store.subscribe(function(){
       let currentStore = store.getState();
@@ -47,33 +50,18 @@ export default React.createClass({
     clearInterval(this.check);
   },
 
-
-  priceUp: function() {
-    sortJobs("?sort=price-high")
-  },
-
-  priceDown: function() {
-    sortJobs("?sort=price-low")
-  },
-
-  distanceDown: function() {
-    sortJobs("?lat=" + this.state.lat + "&" + "lng=" + this.state.long);
-  },
-
-  tripUp: function() {
-    sortJobs("?sort=dist-high")
-  },
-
-  tripDown: function() {
-    sortJobs("?sort=dist-low")
-  },
-
   handleClick: function (data, e) {
   	store.dispatch({
   		type:"GET_JOB",
   		job:data
   	})    
     browserHistory.push("/jobView")
+  },
+
+  handleDistance: function (param) {
+    let jobs = param === 'high' ? this.state.jobs.sort((a,b)=>Number(a.distance) > Number(b.distance)) : this.state.jobs.sort((a,b)=>Number(b.distance) > Number(a.distance))
+    
+    this.setState(jobs)
   },
 
 	render:function () {
@@ -86,9 +74,9 @@ export default React.createClass({
 					<div className="jobList">
             <div className="tableHead">
               <div className="titleTable"> Title </div>
-              <div className="priceTable"><button className="entypo-up-open-mini" onClick={this.priceUp}></button><br /> Price <br /> <button className="entypo-down-open-mini" onClick={this.priceDown}></button></div>
-              <div className="distanceTable"><button className="entypo-up-open-mini"></button><br /> Distance From <br /><button className="entypo-down-open-mini" onClick={this.distanceDown}></button></div>
-              <div className="tripTable"><button className="entypo-up-open-mini" onClick={this.tripUp}></button><br /> Trip Distance <br /><button className="entypo-down-open-mini" onClick={this.tripDown}></button></div>
+              <div className="priceTable"><button className="entypo-up-open-mini" onClick={()=>{filterJobs({filter:'PRICE_LOW'})}}></button><br /> Price <br /> <button className="entypo-down-open-mini" onClick={()=>{filterJobs({filter:'PRICE_HIGH'})}}></button></div>
+              <div className="distanceTable"><button className="entypo-up-open-mini" onClick={()=>{this.handleDistance('low')}}></button><br /> Distance From <br /><button className="entypo-down-open-mini" onClick={()=>{this.handleDistance('high')}}></button></div>
+              <div className="tripTable"><button className="entypo-up-open-mini" onClick={()=>{filterJobs({filter:'TRIP_LOW'})}}></button><br /> Trip Distance <br /><button className="entypo-down-open-mini" onClick={()=>{filterJobs({filter:'TRIP_HIGH'})}}></button></div>
               <div className="infoTable"> More Info </div>
             </div>
 						{this.state.jobs.map(function(data, i){				
